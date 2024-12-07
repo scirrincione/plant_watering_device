@@ -59,8 +59,7 @@
 // Initializes I2C
 void initializeI2C();
 
-// Method originally intended to read humidity sensor but irrelevant since the
-// hardware didn't work
+// Reads monitor and returns 6 bytes of humidity and temperature values (in progress)
 uint8_t readMonitor(uint8_t *reading);
 
 // toggles colon to be on if on is 1 and off if on is 0
@@ -69,7 +68,7 @@ void toggleColon(int on);
 // prints whatever message is sent based on provided length on display
 void printMessage(char*message, uint8_t len);
 
-// Supposed to return humidity from sensor but doesn't work
+// Reads and returns humidity from sensor (in progress)
 uint8_t getHumidity();
 
 // Intended for using a more complex display where I could write out what the 
