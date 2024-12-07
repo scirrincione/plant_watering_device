@@ -79,7 +79,7 @@ void displayTitleNumber(char* title, int num);
 // For sending a command to the display like clear screen that is a simple hex code
 void sendCommandDisplay(uint8_t message);
 
-// For sending a command to humidity sensor but doesn't work
+// Sends command (mainly intended to send write commands) to humidity sensor (in progress)
 void sendCommandMonitor(uint8_t message);
 
 // For formatting two numbers to print as a time to the display
